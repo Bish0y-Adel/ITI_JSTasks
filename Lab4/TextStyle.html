@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .style-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .style-group {
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-width: 150px;
+        }
+        .style-group h4 {
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .radio-option {
+            margin: 5px 0;
+        }
+        #textParagraph {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 100px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>--- Text Style ---</h1>
+    
+    <div id="textParagraph">
+        Here is a paragraph of text that has various alignment characteristics that can be changed dynamically. Click the radio buttons below to view combinations of text style settings.
+    </div>
+
+    <div class="style-container">
+        <div class="style-group">
+            <h4>fontFamily</h4>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="arial" id="arial" checked>
+                <label for="arial">arial</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="courier" id="courier">
+                <label for="courier">courier</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="georgia" id="georgia">
+                <label for="georgia">georgia</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="impact" id="impact">
+                <label for="impact">impact</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="times new roman" id="times">
+                <label for="times">times new roman</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="fontFamily" value="verdana" id="verdana">
+                <label for="verdana">verdana</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>textAlign</h4>
+            <div class="radio-option">
+                <input type="radio" name="textAlign" value="left" id="left" checked>
+                <label for="left">left</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textAlign" value="center" id="center">
+                <label for="center">center</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textAlign" value="right" id="right">
+                <label for="right">right</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textAlign" value="justify" id="justify">
+                <label for="justify">justify</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>lineHeight</h4>
+            <div class="radio-option">
+                <input type="radio" name="lineHeight" value="normal" id="lh-normal" checked>
+                <label for="lh-normal">normal</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="lineHeight" value="10px" id="lh-10">
+                <label for="lh-10">10px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="lineHeight" value="15px" id="lh-15">
+                <label for="lh-15">15px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="lineHeight" value="1.5" id="lh-1.5">
+                <label for="lh-1.5">1.5</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>letterSpacing</h4>
+            <div class="radio-option">
+                <input type="radio" name="letterSpacing" value="normal" id="ls-normal" checked>
+                <label for="ls-normal">normal</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="letterSpacing" value="-1px" id="ls-minus1">
+                <label for="ls-minus1">-1px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="letterSpacing" value="2px" id="ls-2">
+                <label for="ls-2">2px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="letterSpacing" value="3px" id="ls-3">
+                <label for="ls-3">3px</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>textIndent</h4>
+            <div class="radio-option">
+                <input type="radio" name="textIndent" value="0px" id="ti-0" checked>
+                <label for="ti-0">0px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textIndent" value="5px" id="ti-5">
+                <label for="ti-5">5px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textIndent" value="15px" id="ti-15">
+                <label for="ti-15">15px</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textIndent" value="25px" id="ti-25">
+                <label for="ti-25">25px</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>textTransform</h4>
+            <div class="radio-option">
+                <input type="radio" name="textTransform" value="none" id="tt-none" checked>
+                <label for="tt-none">none</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textTransform" value="capitalize" id="tt-cap">
+                <label for="tt-cap">capitalize</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textTransform" value="uppercase" id="tt-upper">
+                <label for="tt-upper">uppercase</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textTransform" value="lowercase" id="tt-lower">
+                <label for="tt-lower">lowercase</label>
+            </div>
+        </div>
+
+        <div class="style-group">
+            <h4>textDecoration</h4>
+            <div class="radio-option">
+                <input type="radio" name="textDecoration" value="none" id="td-none" checked>
+                <label for="td-none">none</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textDecoration" value="line-through" id="td-line">
+                <label for="td-line">line-through</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textDecoration" value="overline" id="td-over">
+                <label for="td-over">overline</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="textDecoration" value="underline" id="td-under">
+                <label for="td-under">underline</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="textStyle.js"></script>
+</body>
+</html>

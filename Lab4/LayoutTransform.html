@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Layout Transformation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            min-height: 100vh;
+            position: relative;
+        }
+        #header {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+        #header img {
+            cursor: pointer;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        #header img:hover {
+            transform: scale(1.05);
+        }
+        .cloned-image {
+            position: absolute;
+            cursor: pointer;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">Click to clone</h1>
+    
+    <div id="header">
+        <img id="originalImage" src="2.jpg" width="200" alt="Click to clone" />
+    </div>
+
+    <script src="layoutTransform.js"></script>
+</body>
+</html>
